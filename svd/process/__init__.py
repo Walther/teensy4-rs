@@ -8,3 +8,4 @@ MIMXRT1062DVL6A SVD from NXP.
 
 from process.adc import adc
 from process.dma import dma
+from process.pwm import pwm

@@ -5,7 +5,9 @@
 
 set -e
 rm -Rf imxrt1062
-svd2rust -i $1
+./process.py $1 $1.tmp
+svd2rust -i $1.tmp
+rm $1.tmp
 cargo new --lib imxrt1062 --vcs none
 mv build.rs imxrt1062
 mv device.x imxrt1062

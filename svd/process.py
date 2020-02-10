@@ -8,7 +8,7 @@ It was designed against version 1.0 of the MIMXRT1062DVL6A SVD from NXP.
 import argparse
 import xml.etree.ElementTree as ET
 
-from process import dma
+from process import adc, dma
 
 parser = argparse.ArgumentParser()
 parser.add_argument("input", help="Path to input SVD")
@@ -18,6 +18,7 @@ args = parser.parse_args()
 
 svd = ET.parse(args.input)
 
+adc(svd)
 dma(svd)
 
 svd.write(args.output)

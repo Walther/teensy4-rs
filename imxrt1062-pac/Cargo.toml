@@ -86,7 +86,7 @@ version = '0.1.0'
 
 [dependencies.imxrt1062-dma0]
 path = 'imxrt1062-dma0'
-version = '0.1.0'
+version = '0.2.0'
 
 [dependencies.imxrt1062-dmamux]
 path = 'imxrt1062-dmamux'

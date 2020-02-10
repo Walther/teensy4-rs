@@ -5,7 +5,7 @@
 
 set -e
 rm -Rf imxrt1062
-svd2rust -i MIMXRT1062.xml
+svd2rust -i $1
 cargo new --lib imxrt1062 --vcs none
 mv build.rs imxrt1062
 mv device.x imxrt1062

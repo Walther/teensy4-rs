@@ -72,6 +72,5 @@ members = [
 ]
 exclude = [
     'tools',
-    'imxrt1062-fcb-gen',
     'svd/imxrt1062',
 ]
